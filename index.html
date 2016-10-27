@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>导航栏</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--demo展示所用css，不用关心 begin-->
+    <link rel="stylesheet" type="text/css" href="dao/assets/reset.css" />
+    <!--demo展示所用css end-->
+    <!--组件依赖css begin-->
+    <link rel="stylesheet" type="text/css" href="dao/assets/widget/navigator/navigator.default.css" /><!--皮肤文件，若不使用该皮肤，可以不加载-->
+    <!--组件依赖css end-->
+
+    <!--组件依赖js begin-->
+    <script type="text/javascript" src="dao/dist/zepto.js"></script>
+    <script type="text/javascript" src="dao/src/extend/touch.js"></script>
+    <script type="text/javascript" src="dao/src/extend/iscroll.js"></script>
+    <script type="text/javascript" src="dao/src/extend/highlight.js"></script>
+    <script type="text/javascript" src="dao/src/extend/parseTpl.js"></script>
+    <script type="text/javascript" src="dao/src/core/gmu.js"></script>
+    <script type="text/javascript" src="dao/src/core/event.js"></script>
+    <script type="text/javascript" src="dao/src/core/widget.js"></script>
+    <script type="text/javascript" src="dao/src/widget/navigator/navigator.js"></script>
+    <script type="text/javascript" src="dao/src/widget/navigator/scrolltonext.js"></script>
+    <script type="text/javascript" src="dao/src/widget/navigator/$scrollable.js"></script>
+    <script type="text/javascript" src="dao/src/widget/navigator/evenness.js"></script>
+    <!--组件依赖js end-->
+
+    <style type="text/css">
+        .ui-scroller {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+
+    <div id="nav">
+        <ul>
+          <li><a href="javascript:;">太阳</a></li>
+            <li><a href="javascript:;">水星</a></li>
+            <li><a href="javascript:;">金星</a></li>
+            <li><a href="javascript:;">地球</a></li>
+            <li><a href="javascript:;">火星</a></li>
+            <li><a href="javascript:;">木星</a></li>
+            <li><a href="javascript:;">土星</a></li>
+            <li><a href="javascript:;">天王星</a></li>
+            <li><a href="javascript:;">海王星</a></li>
+            <li><a href="javascript:;">冥王星</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+
+    $('#nav').navigator();
+  
+</script>
+
+
+</body>
+</html>
